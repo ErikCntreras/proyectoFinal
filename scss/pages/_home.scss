@@ -1,0 +1,80 @@
+//Main-Home
+
+main {
+    .section-1 {
+        h1 {
+            border-bottom: $greenC solid;
+            max-width: 80vw;
+
+            @include media-up(md) {
+                margin: 1rem 0rem;
+            }
+        }
+
+        div {
+            max-width: 75vw;
+
+            iframe {
+                width: 80vw;
+                height: 44vh;
+
+                @include media-up(md) {
+                    width: 35vw;
+                    height: 50vh;
+                    border-top: $greenC solid;
+                    border-bottom: $greenC solid;
+                    border-width: 1px;
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        max-width: 80vw;
+
+        @include media-up(md) {
+            gap: 0.5rem;
+        }
+
+        .cardBg {
+            background: $bgC;
+            color: $whiteC;
+            border: $greenC solid;
+            border-width: 1px;
+
+            .cardImages {
+                height: 180px;
+                object-fit: cover;
+
+                @include media-up(md) {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+
+    .section-3 {
+        div {
+            div {
+                div {
+
+                    @include media-up(md) {
+                        width: 600px;
+                        height: 60vh;
+                    }
+
+                    .carrImages {
+                        height: 180px;
+                        object-fit: cover;
+                        max-width: 70vw;
+
+                        @include media-up(md) {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

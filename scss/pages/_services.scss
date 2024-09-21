@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+.servicesImages{
+    width: 80vw;
+    height: 40vh;
+    @include media-up(md){
+        width: 60vw;
+        height: 60vh;
+    }
+}
+.imageOne{
+    object-fit: fill;
+    height: 100%;
+    
+}

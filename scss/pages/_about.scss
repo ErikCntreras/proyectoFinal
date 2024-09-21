@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+main {
+    .about__section1 {
+        max-width: 80vw;
+    }
+
+    .about__section2 {
+        max-width: 80vw;
+
+        div {
+            div {
+                .about__card--bg {
+                    background: $bgC;
+                    color: $whiteC;
+                    border: $greenC solid;
+                    border-width: 1px;
+                }
+            }
+        }
+    }
+    .about__section3 {
+        max-width: 80vw;
+    }
+}

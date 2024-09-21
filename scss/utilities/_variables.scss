@@ -1,0 +1,20 @@
+$whiteC: rgb(255, 255, 255);
+$greenC: #8DC341;
+$blackC: rgb(48, 47, 48);
+$bgC: linear-gradient(to bottom, rgb(48, 47, 48), rgb(48, 47, 48, 0.6), rgb(48, 47, 48));
+
+
+//MAPS
+$breakPoints: (
+    sm: 541px,
+    md: 768px,
+    lg: 1024px
+);
+
+
+//MIXIN
+@mixin media-up($breakPoint) {
+    @media screen and (min-width: map-get($breakPoints, $breakPoint)) {
+        @content;
+    }
+}
